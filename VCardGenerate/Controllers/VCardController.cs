@@ -7,11 +7,19 @@ using System.Drawing.Imaging;
 using VCardGenerate.Models;
 using ZXing.QrCode.Internal;
 using IronBarCode;
+using VCardGenerate.Data;
 
 namespace VCardGenerate.Controllers;
 
 public class VCardController : Controller
 {
+    private readonly VCardDbContext _context;
+
+    public VCardController(VCardDbContext context)
+    {
+        _context = context;
+    }
+
     public IActionResult Index()
     {
         return View();
@@ -54,7 +62,7 @@ public class VCardController : Controller
             Directory.CreateDirectory(imagesPath);
         }
 
-        string fileName = $"{model.PhoneNumber}.jpg";
+        string fileName = $"{model.PhoneNumber}.jpg"; //nomreler unique oldugu ucun adlandirmani boyle yapdim
         string filePath = Path.Combine(imagesPath, fileName);
 
         // Save the image
@@ -62,6 +70,8 @@ public class VCardController : Controller
 
         model.QrUrl = $"/assets/images/{fileName}";
 
+        _context.VCards.Add(model);
+        _context.SaveChanges();
         return View(model);
     }
 
