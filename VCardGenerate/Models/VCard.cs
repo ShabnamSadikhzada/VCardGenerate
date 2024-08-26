@@ -11,6 +11,8 @@ public class VCard
     public string City { get; set; }
     public string Country { get; set; }
 
+    public string? QrUrl { get; set; }
+
     public string VCardToText()
     {
         return

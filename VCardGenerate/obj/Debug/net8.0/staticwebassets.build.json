@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "r2ZLnlzmLoeEEBDjurt8rwAK0tMR0ZSGPWchxKBsh+k=",
+  "Hash": "F3DRcj18AsgXSKUh4BMOmHc7xZ3z+YyKB/qFpkRFzUg=",
   "Source": "VCardGenerate",
   "BasePath": "_content/VCardGenerate",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Alicavad\\Desktop\\Shabnam\\CodeAcademy\\VCardGenerate\\VCardGenerate\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\VCardGenerate.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Alicavad\\Desktop\\Shabnam\\CodeAcademy\\VCardGenerate\\VCardGenerate\\wwwroot\\assets\\images\\+994998191114.jpg",
+      "SourceId": "VCardGenerate",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Alicavad\\Desktop\\Shabnam\\CodeAcademy\\VCardGenerate\\VCardGenerate\\wwwroot\\",
+      "BasePath": "_content/VCardGenerate",
+      "RelativePath": "assets/images/+994998191114.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\+994998191114.jpg"
     },
     {
       "Identity": "C:\\Users\\Alicavad\\Desktop\\Shabnam\\CodeAcademy\\VCardGenerate\\VCardGenerate\\wwwroot\\css\\site.css",
