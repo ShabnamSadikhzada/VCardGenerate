@@ -1,0 +1,18 @@
+﻿@model VCardGenerate.Models.VCard
+
+@{
+    ViewData["Title"] = "VCard Details";
+}
+
+<h1>VCard Details</h1>
+
+<div>
+    <h3>VCard Details:</h3>
+    <p><strong>First Name:</strong> @Model.FirstName</p>
+    <p><strong>Last Name:</strong> @Model.LastName</p>
+    <p><strong>Email:</strong> @Model.Email</p>
+    <p><strong>Phone Number:</strong> @Model.PhoneNumber</p>
+    <p><strong>Phone Type:</strong> @Model.PhoneType</p>
+    <p><strong>City:</strong> @Model.City</p>
+    <p><strong>Country:</strong> @Model.Country</p>
+</div>
