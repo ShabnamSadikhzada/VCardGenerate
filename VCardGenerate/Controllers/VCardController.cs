@@ -1,13 +1,7 @@
 ﻿using IronBarCode;
-using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Mvc;
-using QRCoder;
-using System.Drawing;
-using System.Drawing.Imaging;
-using VCardGenerate.Models;
-using ZXing.QrCode.Internal;
-using IronBarCode;
 using VCardGenerate.Data;
+using VCardGenerate.Models;
 
 namespace VCardGenerate.Controllers;
 

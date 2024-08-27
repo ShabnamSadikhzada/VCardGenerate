@@ -4,11 +4,11 @@
     ViewData["Title"] = "VCard Details";
 }
 
-<h1>VCard Details</h1>
 
-<div>
-    <div>
-        <h3>VCard Details:</h3>
+<div class="vcard-details-container">
+    <div class="vcard-info">
+        <h1>VCard Details</h1>
+        <br/>
         <p><strong>First Name:</strong> @Model.FirstName</p>
         <p><strong>Last Name:</strong> @Model.LastName</p>
         <p><strong>Email:</strong> @Model.Email</p>
@@ -17,15 +17,47 @@
         <p><strong>City:</strong> @Model.City</p>
         <p><strong>Country:</strong> @Model.Country</p>
     </div>
-    <div>
+    <div class="vcard-qr">
         @if (!string.IsNullOrEmpty(Model.QrUrl))
         {
-            <div>
-                <h3>QR Code:</h3>
-                <img src="@Model.QrUrl" alt="VCard QR Code"/>
+            <div class="qr-code-container">
+                <h2>QR Code:</h2>
+                <br />
+                <img src="@Model.QrUrl" alt="VCard QR Code" />
             </div>
         }
     </div>
 </div>
 
+<style>
+    .vcard-details-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 100px;
+    }
 
+    .vcard-info {
+        flex: 1 1 60%;
+        padding-right: 20px;
+    }
+
+    .vcard-qr {
+        flex: 1 1 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .qr-code-container img {
+        width: 300px; /* Adjust the size as needed */
+        height: 300px; /* Keep the aspect ratio by using the same value for width and height */
+        border: 1px solid #ccc;
+        padding: 5px;
+        background-color: #f9f9f9;
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+</style>

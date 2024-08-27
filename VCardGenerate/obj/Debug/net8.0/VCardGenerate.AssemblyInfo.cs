@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VCardGenerate")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe5144181899f19b291be52f5988086ab19b3790")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5bf76f308f8285ddae11858630b84c9ee5ec611")]
 [assembly: System.Reflection.AssemblyProductAttribute("VCardGenerate")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VCardGenerate")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
